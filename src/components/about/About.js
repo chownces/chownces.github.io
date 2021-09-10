@@ -19,9 +19,8 @@ const About = props => {
               </p>
               <p>
                 My current interests include web development, computer vision, and AI for
-                healthcare. Passionate about using tech for good, I actively seek opportunities to
-                use software to make the world around us <i>just a little better</i> than it was
-                before.
+                healthcare. Passionate about using tech for good, I am actively seeking
+                opportunities to use software to improve the world around us.
               </p>
               <p>
                 Apart from banging out code on the keyboard, I enjoy doing music, nature, and

@@ -26,6 +26,7 @@ const Portfolio = props => {
 
           <h1 style={{ margin: '50px 0 0 0' }}>Side Projects</h1>
           <CardCarousel images={[nw1, nw2, nw3]} card={sideProjectCards[0]} />
+          <CardCarousel card={sideProjectCards[1]} />
           <div style={{ height: '100px' }} />
         </div>
       </div>
@@ -36,10 +37,10 @@ const Portfolio = props => {
 const educationCards = [
   {
     title: 'National University of Singapore',
+    date: 'Present',
     sections: [
       {
         subtitle: 'Bachelor of Computing in Computer Science',
-        date: 'Present',
         points: [
           'Expected Graduation: May 2024',
           'CAP: 4.85/ 5.0',
@@ -50,11 +51,11 @@ const educationCards = [
   },
   {
     title: 'Raffles Institution',
+    date: 'Jan 2016 - Dec 2017',
     sections: [
       {
         subtitle: 'GCE A Level',
-        date: 'Jan 2016 - Dec 2017',
-        points: ['Attained 88.75/90 RP with Distinction in H3 Geography']
+        points: ['Attained 88.75/ 90 RP with Distinction in H3 Geography']
       }
     ]
   }
@@ -103,10 +104,10 @@ const externalCoursesCards = [
 const workExperienceCards = [
   {
     title: 'Teaching Assistant (CS1101S Programming Methodology)',
+    date: 'Aug 2021 - Present',
     sections: [
       {
         subtitle: 'NUS School of Computing',
-        date: 'Aug 2021 - Present',
         points: [
           'Leads weekly tutorial sessions on programming and computational problem solving for Computer Science freshmen'
         ]
@@ -115,10 +116,10 @@ const workExperienceCards = [
   },
   {
     title: 'Full Stack Developer (Summer)',
+    date: 'May 2021 - Jul 2021',
     sections: [
       {
         subtitle: 'Source Academy',
-        date: 'May 2021 - Jul 2021',
         points: [
           <>
             The{' '}
@@ -131,23 +132,30 @@ const workExperienceCards = [
           'Developed multi-tenant backend architecture and UI for the system which could previously only cater to a single course at a time',
           'Enabled multiple courses to be created and ran concurrently on the same instance with no downtime',
           'Additionally, managed deployment ops for the summer Source Academy courses at NUS',
-          <i>
-            (ReactJS, Redux, Saga, BlueprintJS | Elixir, Phoenix, Ecto, PostgreSQL | AWS IaaS |
-            GitHub)
-          </i>
+          <>
+            <u>Leveraged knowledge</u>:{' '}
+            <i>
+              TypeScript, ReactJS, Redux, Saga, BlueprintJS | Elixir, Phoenix, Ecto, PostgreSQL |
+              AWS IaaS | GitHub
+            </i>
+          </>
         ]
       }
     ]
   },
   {
     title: 'Student Frontend Developer',
+    date: 'Dec 2020 - Apr 2021',
     sections: [
       {
         subtitle: 'NUS School of Computing',
-        date: 'Dec 2020 - Apr 2021',
         points: [
           'Designed and implemented responsive layouts and mobile-friendly features for the previously desktop-only online IDE in Source Academy, as part of the module CP3108B (Independent Work)',
-          <i>(Responsive Web Design | UI/UX Design | ReactJS, BlueprintJS, CSS)</i>
+          'Added Progressive Web App (PWA) functionality for mobile users',
+          <>
+            <u>Leveraged knowledge</u>:{' '}
+            <i>Responsive Web Design | UI/UX Design | ReactJS, BlueprintJS, CSS</i>
+          </>
         ]
       }
     ]
@@ -157,10 +165,10 @@ const workExperienceCards = [
 const sideProjectCards = [
   {
     title: 'NoteWorthy',
+    date: 'May 2021 - Aug 2021',
     sections: [
       {
         subtitle: 'CP2106 Independent Software Development Project (NUS Orbital)',
-        date: 'May 2021 - Aug 2021',
         points: [
           'Developed a desktop notetaking app with a feature set targeted at learning and collaboration of notes for students',
           'Implemented an interactive frontend where notes are stored in draggable and nestable content-editable div blocks',
@@ -172,10 +180,34 @@ const sideProjectCards = [
           >
             See project documentation and repositories...
           </a>,
-          <i>
-            (ReactJS, Semantic-UI | Express, Apollo, GraphQL, MongoDB | Vercel, Heroku, MongoDB
-            Atlas)
-          </i>
+          <>
+            <u>Utilized</u>:{' '}
+            <i>
+              ReactJS, Semantic-UI | Express, Apollo, GraphQL, MongoDB | Vercel, Heroku, MongoDB
+              Atlas
+            </i>
+          </>
+        ]
+      }
+    ]
+  },
+  {
+    title: 'Build On, Singapore 2020',
+    date: 'Jul 2020 - Sep 2020',
+    sections: [
+      {
+        subtitle: 'Case Competition (Amazon Web Services)',
+        points: [
+          'Designed and prototyped a Telegram bot to combat misinformation through state-of-the-art Natural Language Processing techniques',
+          'Fine-tuned a BERT Sequence Classification Model and deployed it on an AWS Sagemaker endpoint, to be invoked from the Telegram bot backend on AWS Lambda',
+          'Advanced to semi-finalist phase, consisting of the top 50 teams',
+          <>
+            <u>Utilized</u>:{' '}
+            <i>
+              Python, Transformer Neural Networks, Jupyter Notebooks, Telegram API | AWS Sagemaker,
+              AWS Lambda
+            </i>
+          </>
         ]
       }
     ]
