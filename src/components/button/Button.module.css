@@ -1,0 +1,43 @@
+.button {
+  font-family: 'Raleway';
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #fff;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 10px 0;
+  width: fit-content;
+  background-color: transparent;
+}
+
+.button a {
+  padding: 12px 20px;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.4s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
