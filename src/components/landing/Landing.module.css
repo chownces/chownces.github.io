@@ -3,7 +3,7 @@
   min-height: 100vh;
   background-image: url('../../assets/landing.jpg');
   background-size: cover;
-  background-position: 1rem;
+  background-position: center;
 }
 
 .landingContentContainer {
@@ -36,11 +36,11 @@
   font-size: 2rem;
   margin-top: 30px;
   margin-left: 20px;
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .landingSubheaderAccent {
-  color: rgba(255, 87, 87, 0.75);
+  color: rgba(255, 87, 87, 0.8);
   display: inline;
 }
 
