@@ -132,6 +132,9 @@ const workExperienceCards = [
           'Developed multi-tenant backend architecture and UI for the system which could previously only cater to a single course at a time',
           'Enabled multiple courses to be created and ran concurrently on the same instance with no downtime',
           'Additionally, managed deployment ops for the summer Source Academy courses at NUS',
+          <a href="https://github.com/source-academy/" target="_blank" rel="noreferrer">
+            See repositories...
+          </a>,
           <>
             <u>Leveraged knowledge</u>:{' '}
             <i>
@@ -152,6 +155,9 @@ const workExperienceCards = [
         points: [
           'Designed and implemented responsive layouts and mobile-friendly features for the previously desktop-only online IDE in Source Academy, as part of the module CP3108B (Independent Work)',
           'Added Progressive Web App (PWA) functionality for mobile users',
+          <a href="https://github.com/source-academy/frontend" target="_blank" rel="noreferrer">
+            See repository...
+          </a>,
           <>
             <u>Leveraged knowledge</u>:{' '}
             <i>Responsive Web Design | UI/UX Design | ReactJS, BlueprintJS, CSS</i>
@@ -178,7 +184,10 @@ const sideProjectCards = [
             target="_blank"
             rel="noreferrer"
           >
-            See project documentation and repositories...
+            See project documentation...
+          </a>,
+          <a href="https://github.com/chownces/NoteWorthy" target="_blank" rel="noreferrer">
+            See repositories...
           </a>,
           <>
             <u>Utilized</u>:{' '}
