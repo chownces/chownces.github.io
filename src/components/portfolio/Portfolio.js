@@ -257,12 +257,13 @@ const Card = props => {
     <div className={styles.card}>
       <div className={styles.cardTitle}>
         {title}
-        {date ? <span> | {date}</span> : null}
+        {date ? <span className={styles.date1}> | {date}</span> : null}
       </div>
       {sections &&
         sections.map((e, idx) => (
           <div key={idx}>
             <div className={styles.cardSubtitle}>{e.subtitle}</div>
+            {idx === 0 && date && <div className={styles.date2}>({date})</div>}
             <ul>
               {e.points && e.points.map((e, idx) => <li key={idx}>{e}</li>)}
               {e.links &&

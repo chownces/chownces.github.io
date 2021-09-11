@@ -26,9 +26,16 @@
   font-size: 1.1rem;
   font-weight: bold;
 }
-.cardTitle span {
+.cardTitle span.date1 {
   color: #b8b8b4;
   font-size: 0.9rem;
+}
+.date2 {
+  display: none;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  color: #b8b8b4;
+  font-size: 0.85rem;
 }
 
 .cardSubtitle {
@@ -122,11 +129,21 @@ a:focus::after {
     margin-left: 0;
     margin-top: 50px;
   }
+
+  .date1 {
+    display: none;
+  }
+  .date2 {
+    display: initial;
+  }
 }
 
 @media only screen and (max-width: 500px) {
-  .sectionContent {
+  .section {
     width: 90%;
+  }
+  .sectionContent {
+    width: 100%;
   }
 }
 
