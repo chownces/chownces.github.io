@@ -1,5 +1,8 @@
 import { Carousel } from 'react-responsive-carousel';
 import Spacer from '../spacer/Spacer';
+import chr1 from '../../assets/chr1.png';
+import chr2 from '../../assets/chr2.png';
+import chr3 from '../../assets/chr3.png';
 import sa1 from '../../assets/sa1.png';
 import sa2 from '../../assets/sa2.png';
 import sa3 from '../../assets/sa3.png';
@@ -7,6 +10,8 @@ import sa4 from '../../assets/sa4.png';
 import nw1 from '../../assets/nw1.png';
 import nw2 from '../../assets/nw2.png';
 import nw3 from '../../assets/nw3.png';
+import sam1 from '../../assets/sam1.PNG';
+import sam2 from '../../assets/sam2.PNG';
 import styles from './Portfolio.module.css';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
@@ -19,14 +24,16 @@ const Portfolio = props => {
           <Section sectionTitle="Education" cards={educationCards} />
           <Section sectionTitle="External Courses" cards={externalCoursesCards} />
 
-          <h1 style={{ margin: '50px 0 0 0' }}>Work Experience</h1>
+          <h1 style={{ margin: '80px 0 0 0' }}>Work Experience</h1>
           <CardCarousel card={workExperienceCards[0]} />
           <CardCarousel images={[sa1, sa2, sa3, sa4]} card={workExperienceCards[1]} />
-          <CardCarousel card={workExperienceCards[2]} />
+          <CardCarousel images={[sam1, sam2]} card={workExperienceCards[2]} />
 
-          <h1 style={{ margin: '50px 0 0 0' }}>Side Projects</h1>
+          <h1 style={{ margin: '80px 0 0 0' }}>Side Projects</h1>
           <CardCarousel images={[nw1, nw2, nw3]} card={sideProjectCards[0]} />
           <CardCarousel card={sideProjectCards[1]} />
+          <CardCarousel images={[chr1, chr2, chr3]} card={sideProjectCards[2]} />
+          <CardCarousel card={sideProjectCards[3]} />
           <div style={{ height: '100px' }} />
         </div>
       </div>
@@ -109,7 +116,14 @@ const workExperienceCards = [
       {
         subtitle: 'NUS School of Computing',
         points: [
-          'Leads weekly tutorial sessions on programming and computational problem solving for Computer Science freshmen'
+          <>
+            Leads weekly tutorial sessions on programming and computational problem solving for
+            Computer Science freshmen, based on the content in{' '}
+            <a href="https://sourceacademy.org/sicpjs/index" target="_blank" rel="noreferrer">
+              SICP JavaScript Adaptation
+            </a>
+          </>,
+          'Grades and provides timely feedback on weekly programming assignments ranging from computer graphics, sound processing to robotics'
         ]
       }
     ]
@@ -179,21 +193,25 @@ const sideProjectCards = [
           'Developed a desktop notetaking app with a feature set targeted at learning and collaboration of notes for students',
           'Implemented an interactive frontend where notes are stored in draggable and nestable content-editable div blocks',
           'Designed an Express-GraphQL backend with MongoDB to enable notes to be persisted on an online database',
-          <a
-            href="https://chownces.github.io/noteworthy-documentation/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            See project documentation...
-          </a>,
-          <a href="https://github.com/chownces/NoteWorthy" target="_blank" rel="noreferrer">
-            See repositories...
-          </a>,
+          'Practiced writing unit tests and database migration files',
+          'Setup basic CI/CD pipeline for deployment to Vercel, Heroku and MongoDB Atlas',
+          <>
+            <a
+              href="https://chownces.github.io/noteworthy-documentation/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              See project documentation...
+            </a>{' '}
+            <a href="https://github.com/chownces/NoteWorthy" target="_blank" rel="noreferrer">
+              repositories...
+            </a>
+          </>,
           <>
             <u>Utilized</u>:{' '}
             <i>
               ReactJS, Semantic-UI | Express, Apollo, GraphQL, MongoDB | Vercel, Heroku, MongoDB
-              Atlas
+              Atlas | Basic Testing &amp; CI/CD
             </i>
           </>
         ]
@@ -216,6 +234,38 @@ const sideProjectCards = [
               Python, Transformer Neural Networks, Jupyter Notebooks, Telegram API | AWS Sagemaker,
               AWS Lambda
             </i>
+          </>
+        ]
+      }
+    ]
+  },
+  {
+    title: 'Online Christmas Escape Room',
+    date: 'Dec 2020',
+    sections: [
+      {
+        subtitle: 'Personal Project',
+        points: [
+          'Designed and implemented a simple React quiz application for a Christmas-themed online escape room',
+          'Deployed on Heroku and used by around two dozen people when operational',
+          <>
+            <u>Utilized</u>: <i>ReactJS, HTML, CSS | Heroku</i>
+          </>
+        ]
+      }
+    ]
+  },
+  {
+    title: 'Telegram Bots',
+    date: 'July 2020 & July 2021',
+    sections: [
+      {
+        subtitle: 'Personal Project',
+        points: [
+          'Created a collaborative Todo List Bot for students to track homework due dates filterable by their own module codes',
+          'Implemented a Web Scraping Bot which gathered online Christian prayer material used by 500 people when operational',
+          <>
+            <u>Utilized</u>: <i>Python, Node.js, Telegram API | PostgreSQL | Heroku</i>
           </>
         ]
       }
