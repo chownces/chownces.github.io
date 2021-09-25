@@ -11,6 +11,29 @@ const About = props => {
         <div className={styles.aboutContent}>
           <div className={styles.aboutContentImg}>
             <img src={profileImg} alt="profile"></img>
+            <div className={styles.socialsContainer}>
+              <ul>
+                <li>
+                  <a href="https://github.com/chownces" target="_blank" rel="noreferrer">
+                    <i className="fa fa-github"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/chowenrong/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <i className="fa fa-linkedin"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:chowenrong@u.nus.edu">
+                    <i className="fa fa-envelope"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
           <div className={styles.aboutContentTextContainer}>
             <div className={styles.aboutContentText}>

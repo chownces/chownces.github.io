@@ -29,11 +29,15 @@ const Portfolio = props => {
           <CardCarousel images={[sa1, sa2, sa3, sa4]} card={workExperienceCards[1]} />
           <CardCarousel images={[sam1, sam2]} card={workExperienceCards[2]} />
 
-          <h1 style={{ margin: '80px 0 0 0' }}>Side Projects</h1>
-          <CardCarousel images={[nw1, nw2, nw3]} card={sideProjectCards[0]} />
-          <CardCarousel card={sideProjectCards[1]} />
-          <CardCarousel images={[chr1, chr2, chr3]} card={sideProjectCards[2]} />
-          <CardCarousel card={sideProjectCards[3]} />
+          <h1 style={{ margin: '80px 0 0 0' }}>Software Side Projects</h1>
+          <CardCarousel images={[nw1, nw2, nw3]} card={softwareSideProjectCards[0]} />
+          <CardCarousel card={softwareSideProjectCards[1]} />
+          <CardCarousel images={[chr1, chr2, chr3]} card={softwareSideProjectCards[2]} />
+          <CardCarousel card={softwareSideProjectCards[3]} />
+
+          <h1 style={{ margin: '80px 0 0 0' }}>AI Side Projects</h1>
+          <CardCarousel card={aiSideProjects[0]} />
+
           <div style={{ height: '100px' }} />
         </div>
       </div>
@@ -98,6 +102,15 @@ const externalCoursesCards = [
     ]
   },
   {
+    title: 'Deep Learning Specialization',
+    sections: [
+      {
+        subtitle: 'Coursera (DeepLearning.ai)',
+        points: ['Audited']
+      }
+    ]
+  },
+  {
     title: 'AI for Industry (AI4I)',
     sections: [
       {
@@ -120,7 +133,7 @@ const workExperienceCards = [
             Leads weekly tutorial sessions on programming and computational problem solving for
             Computer Science freshmen, based on the content in{' '}
             <a href="https://sourceacademy.org/sicpjs/index" target="_blank" rel="noreferrer">
-              SICP JavaScript Adaptation
+              SICP JavaScript Edition
             </a>
           </>,
           'Grades and provides timely feedback on weekly programming assignments ranging from computer graphics, sound processing to robotics'
@@ -182,7 +195,7 @@ const workExperienceCards = [
   }
 ];
 
-const sideProjectCards = [
+const softwareSideProjectCards = [
   {
     title: 'NoteWorthy',
     date: 'May 2021 - Aug 2021',
@@ -219,21 +232,16 @@ const sideProjectCards = [
     ]
   },
   {
-    title: 'Build On, Singapore 2020',
-    date: 'Jul 2020 - Sep 2020',
+    title: 'Telegram Bots',
+    date: 'July 2020 & July 2021',
     sections: [
       {
-        subtitle: 'Case Competition (Amazon Web Services)',
+        subtitle: 'Personal Project',
         points: [
-          'Designed and prototyped a Telegram bot to combat misinformation through state-of-the-art Natural Language Processing techniques',
-          'Fine-tuned a BERT Sequence Classification Model and deployed it on an AWS Sagemaker endpoint, to be invoked from the Telegram bot backend on AWS Lambda',
-          'Advanced to semi-finalist phase, consisting of the top 50 teams',
+          'Created a collaborative Todo List Bot for students to track homework due dates filterable by their own module codes',
+          'Implemented a Web Scraping Bot which gathered online Christian prayer material used by 500 people when operational',
           <>
-            <u>Utilized</u>:{' '}
-            <i>
-              Python, Transformer Neural Networks, Jupyter Notebooks, Telegram API | AWS Sagemaker,
-              AWS Lambda
-            </i>
+            <u>Utilized</u>: <i>Python, Node.js, Telegram API | PostgreSQL | Heroku</i>
           </>
         ]
       }
@@ -254,18 +262,26 @@ const sideProjectCards = [
         ]
       }
     ]
-  },
+  }
+];
+
+const aiSideProjects = [
   {
-    title: 'Telegram Bots',
-    date: 'July 2020 & July 2021',
+    title: 'Build On, Singapore 2020',
+    date: 'Jul 2020 - Sep 2020',
     sections: [
       {
-        subtitle: 'Personal Project',
+        subtitle: 'Case Competition (Amazon Web Services)',
         points: [
-          'Created a collaborative Todo List Bot for students to track homework due dates filterable by their own module codes',
-          'Implemented a Web Scraping Bot which gathered online Christian prayer material used by 500 people when operational',
+          'Designed and prototyped a Telegram bot to combat misinformation through state-of-the-art Natural Language Processing (NLP) techniques',
+          'Fine-tuned a BERT Sequence Classification Model and deployed it on an AWS Sagemaker endpoint, to be invoked from the Telegram bot backend on AWS Lambda',
+          'Advanced to semi-finalist phase, consisting of the top 50 teams',
           <>
-            <u>Utilized</u>: <i>Python, Node.js, Telegram API | PostgreSQL | Heroku</i>
+            <u>Utilized</u>:{' '}
+            <i>
+              Python, Transformer Neural Networks, Jupyter Notebooks, Telegram API | AWS Sagemaker,
+              AWS Lambda
+            </i>
           </>
         ]
       }
