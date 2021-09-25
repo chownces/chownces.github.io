@@ -159,6 +159,7 @@ const workExperienceCards = [
           'Developed multi-tenant backend architecture and UI for the system which could previously only cater to a single course at a time',
           'Enabled multiple courses to be created and ran concurrently on the same instance with no downtime',
           'Additionally, managed deployment ops for the summer Source Academy courses at NUS',
+          'The system is currently used live by over 700 users (as of Sep 2021), with much more to come in the future',
           <a href="https://github.com/source-academy/" target="_blank" rel="noreferrer">
             See repositories...
           </a>,
