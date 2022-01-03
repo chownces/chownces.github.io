@@ -4,20 +4,15 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-responsive-carousel": "^3.2.21",
     "react-scripts": "4.0.3",
-    "react-scroll": "^1.8.4",
-    "web-vitals": "^1.0.1"
+    "react-scroll": "^1.8.4"
   },
   "scripts": {
     "start": "BROWSER=none react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
     "eject": "react-scripts eject",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\" && prettier --write --parser css \"src/**/*.css\"",
     "predeploy": "npm run build",
