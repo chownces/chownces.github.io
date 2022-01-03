@@ -44,6 +44,19 @@
   margin-top: 3px;
 }
 
+.card .cardSubtitle a {
+  color: rgba(255, 87, 87, 0.85);
+}
+/* Uncomment to remove transform underline red styling on subtitle link hover */
+/* .card .cardSubtitle a::after {
+  transition: none;
+  opacity: 0;
+}
+.card .cardSubtitle a:hover::after {
+  transition: none;
+  opacity: 0;
+} */
+
 .card ul {
   line-height: 1.5;
   padding-left: 30px;

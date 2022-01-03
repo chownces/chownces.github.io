@@ -16,6 +16,8 @@ import styles from './Portfolio.module.css';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const Portfolio = props => {
+  const renderCards = cards => cards.map((card, idx) => <CardCarousel key={idx} card={card} />);
+
   return (
     <>
       <Spacer id="portfolio" />
@@ -25,18 +27,13 @@ const Portfolio = props => {
           <Section sectionTitle="External Courses" cards={externalCoursesCards} />
 
           <h1 style={{ margin: '80px 0 0 0' }}>Work Experience</h1>
-          <CardCarousel card={workExperienceCards[0]} />
-          <CardCarousel images={[sa1, sa2, sa3, sa4]} card={workExperienceCards[1]} />
-          <CardCarousel images={[sam1, sam2]} card={workExperienceCards[2]} />
+          {renderCards(workExperienceCards)}
 
           <h1 style={{ margin: '80px 0 0 0' }}>Software Side Projects</h1>
-          <CardCarousel images={[nw1, nw2, nw3]} card={softwareSideProjectCards[0]} />
-          <CardCarousel card={softwareSideProjectCards[1]} />
-          <CardCarousel images={[chr1, chr2, chr3]} card={softwareSideProjectCards[2]} />
-          <CardCarousel card={softwareSideProjectCards[3]} />
+          {renderCards(softwareSideProjectCards)}
 
           <h1 style={{ margin: '80px 0 0 0' }}>AI Side Projects</h1>
-          <CardCarousel card={aiSideProjects[0]} />
+          {renderCards(aiSideProjects)}
 
           <div style={{ height: '100px' }} />
         </div>
@@ -53,8 +50,8 @@ const educationCards = [
       {
         subtitle: 'Bachelor of Computing in Computer Science',
         points: [
-          'Expected Graduation: May 2024',
-          'CAP: 4.85/ 5.0',
+          'Expected Graduation: Dec 2023',
+          'CAP: 4.82/ 5.0',
           `Dean's List AY20/21 Semester 1`
         ]
       }
@@ -123,20 +120,53 @@ const externalCoursesCards = [
 
 const workExperienceCards = [
   {
+    title: 'Software Engineer Intern',
+    date: 'Jan 2022 - Present',
+    sections: [
+      {
+        subtitle: 'GovTech (Engineering Suite)',
+        subtitleLink:
+          'https://www.developer.tech.gov.sg/singapore-government-tech-stack/service-management/engineering-suite',
+        points: [
+          "Engineering Suite is a Service Management Tool that unifies central services such as government agencies' access and subscription to Singapore Government Tech Stack (SGTS) products"
+        ]
+      }
+    ]
+  },
+  {
+    title: 'Software Engineer Intern',
+    date: 'Nov 2021 - Dec 2021',
+    sections: [
+      {
+        subtitle: 'MatcHub',
+        subtitleLink: 'https://matchub.co',
+        points: [
+          'Implemented new features and responsive layouts for user-facing frontend dashboards',
+          'Spearheaded code quality improvement efforts for the frontend repository, such as the migration from JavaScript to TypeScript, and miscellaneous light refactoring',
+          <>
+            <u>Leveraged knowledge</u>:{' '}
+            <i>TypeScript, ReactJS, Redux, Material-UI | Django, PostgreSQL, Docker</i>
+          </>
+        ]
+      }
+    ]
+  },
+  {
     title: 'Teaching Assistant (CS1101S Programming Methodology)',
-    date: 'Aug 2021 - Present',
+    date: 'Aug 2021 - Nov 2021',
     sections: [
       {
         subtitle: 'NUS School of Computing',
+        subtitleLink: 'https://www.comp.nus.edu.sg/',
         points: [
           <>
-            Leads weekly tutorial sessions on programming and computational problem solving for
+            Led weekly tutorial sessions on programming and computational problem solving for
             Computer Science freshmen, based on the content in{' '}
             <a href="https://sourceacademy.org/sicpjs/index" target="_blank" rel="noreferrer">
               SICP JavaScript Edition
             </a>
           </>,
-          'Grades and provides timely feedback on weekly programming assignments ranging from computer graphics, sound processing to robotics'
+          'Graded and provided timely feedback on weekly programming assignments ranging from computer graphics, sound processing to robotics'
         ]
       }
     ]
@@ -144,9 +174,11 @@ const workExperienceCards = [
   {
     title: 'Full Stack Developer (Summer)',
     date: 'May 2021 - Jul 2021',
+    images: [sa1, sa2, sa3, sa4],
     sections: [
       {
         subtitle: 'Source Academy',
+        subtitleLink: 'https://github.com/source-academy',
         points: [
           <>
             The{' '}
@@ -177,9 +209,11 @@ const workExperienceCards = [
   {
     title: 'Student Frontend Developer',
     date: 'Dec 2020 - Apr 2021',
+    images: [sam1, sam2],
     sections: [
       {
         subtitle: 'NUS School of Computing',
+        subtitleLink: 'https://www.comp.nus.edu.sg/',
         points: [
           'Designed and implemented responsive layouts and mobile-friendly features for the previously desktop-only online IDE in Source Academy, as part of the module CP3108B (Independent Work)',
           'Added Progressive Web App (PWA) functionality for mobile users',
@@ -200,6 +234,7 @@ const softwareSideProjectCards = [
   {
     title: 'NoteWorthy',
     date: 'May 2021 - Aug 2021',
+    images: [nw1, nw2, nw3],
     sections: [
       {
         subtitle: 'CP2106 Independent Software Development Project (NUS Orbital)',
@@ -251,6 +286,7 @@ const softwareSideProjectCards = [
   {
     title: 'Online Christmas Escape Room',
     date: 'Dec 2020',
+    images: [chr1, chr2, chr3],
     sections: [
       {
         subtitle: 'Personal Project',
@@ -304,17 +340,17 @@ const Section = props => {
 };
 
 const CardCarousel = props => {
-  const { card, images } = props;
+  const { card } = props;
 
   return (
     <div className={styles.cardCarouselContainer}>
       <div>
         <Card {...card} />
       </div>
-      {images && (
+      {card.images && (
         <div className={styles.cardCarousel}>
           <Carousel showArrows autoPlay infiniteLoop showThumbs={false} className={styles.carousel}>
-            {images.map((img, idx) => (
+            {card.images.map((img, idx) => (
               <div key={idx}>
                 <img src={img} alt="" />
               </div>
@@ -338,7 +374,14 @@ const Card = props => {
       {sections &&
         sections.map((e, idx) => (
           <div key={idx}>
-            <div className={styles.cardSubtitle}>{e.subtitle}</div>
+            <div className={styles.cardSubtitle}>
+              {e.subtitleLink && (
+                <a href={e.subtitleLink} target="_blank" rel="noreferrer">
+                  {e.subtitle}
+                </a>
+              )}
+              {!e.subtitleLink && e.subtitle}
+            </div>
             {idx === 0 && date && <div className={styles.date2}>({date})</div>}
             <ul>
               {e.points && e.points.map((e, idx) => <li key={idx}>{e}</li>)}
