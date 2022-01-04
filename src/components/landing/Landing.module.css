@@ -1,7 +1,7 @@
 .landingContainer {
   height: 100%;
   min-height: 100vh;
-  background-image: url('../../assets/landing.jpg');
+  background-image: url('https://chownces.github.io/landing.jpg');
   background-size: cover;
   background-position: center;
 }
