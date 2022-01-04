@@ -17,6 +17,11 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const Portfolio = props => {
   const renderCards = cards => cards.map((card, idx) => <CardCarousel key={idx} card={card} />);
+  const renderHeader = title => (
+    <h1 data-aos="slide-down" style={{ margin: '80px 0 0 0' }}>
+      {title}
+    </h1>
+  );
 
   return (
     <>
@@ -26,13 +31,13 @@ const Portfolio = props => {
           <Section sectionTitle="Education" cards={educationCards} />
           <Section sectionTitle="External Courses" cards={externalCoursesCards} />
 
-          <h1 style={{ margin: '80px 0 0 0' }}>Work Experience</h1>
+          {renderHeader('Work Experience')}
           {renderCards(workExperienceCards)}
 
-          <h1 style={{ margin: '80px 0 0 0' }}>Software Side Projects</h1>
+          {renderHeader('Software Side Projects')}
           {renderCards(softwareSideProjectCards)}
 
-          <h1 style={{ margin: '80px 0 0 0' }}>AI Side Projects</h1>
+          {renderHeader('AI Side Projects')}
           {renderCards(aiSideProjects)}
 
           <div style={{ height: '100px' }} />
@@ -328,7 +333,12 @@ const aiSideProjects = [
 
 const Section = props => {
   return (
-    <div className={styles.section}>
+    <div
+      data-aos="slide-up"
+      data-aos-duration="600"
+      data-aos-offset="200"
+      className={styles.section}
+    >
       <div className={styles.sectionHeader}>
         <h1>{props.sectionTitle}</h1>
       </div>
@@ -343,7 +353,7 @@ const CardCarousel = props => {
   const { card } = props;
 
   return (
-    <div className={styles.cardCarouselContainer}>
+    <div data-aos="zoom-in" data-aos-duration="600" className={styles.cardCarouselContainer}>
       <div>
         <Card {...card} />
       </div>

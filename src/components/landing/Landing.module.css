@@ -37,6 +37,34 @@
   margin-top: 30px;
   margin-left: 20px;
   color: rgba(255, 255, 255, 0.8);
+
+  /* Typewriter effect referenced from https://css-tricks.com/snippets/css/typewriter-effect/ */
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 1.2s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* Typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
 }
 
 .landingSubheaderAccent {
@@ -75,5 +103,13 @@
   .landingSubheader {
     margin: 0;
     font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .landingSubheader {
+    animation: none;
+    white-space: normal;
+    border-right: none;
   }
 }

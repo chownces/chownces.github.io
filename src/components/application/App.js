@@ -1,4 +1,6 @@
 import React from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import NavigationBar from '../navigationBar/NavigationBar';
 import Landing from '../landing/Landing';
 import About from '../about/About';
@@ -21,6 +23,10 @@ function App() {
     ],
     []
   );
+
+  React.useEffect(() => {
+    AOS.init();
+  }, []);
 
   React.useEffect(() => {
     const handleScroll = () => {

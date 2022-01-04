@@ -7,7 +7,12 @@ const About = props => {
   return (
     <>
       <Spacer id="about" />
-      <div className={styles.about} ref={props.sectionRef}>
+      <div
+        data-aos="zoom-in"
+        data-aos-duration="600"
+        className={styles.about}
+        ref={props.sectionRef}
+      >
         <div className={styles.aboutContent}>
           <div className={styles.aboutContentImg}>
             <img src={profileImg} alt="profile"></img>

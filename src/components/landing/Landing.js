@@ -6,13 +6,15 @@ const Landing = props => {
     <div id="home" className={styles.landingContainer} ref={props.sectionRef}>
       <div className={styles.landingContentContainer}>
         <div className={styles.landingHeaderContainer}>
-          <h1 className={styles.landingHeader1}>Hi, I'm</h1>
-          <h1 className={styles.landingHeader2}>En Rong.</h1>
+          <div data-aos="slide-right" data-aos-easing="ease-in">
+            <h1 className={styles.landingHeader1}>Hi, I'm</h1>
+            <h1 className={styles.landingHeader2}>En Rong.</h1>
+          </div>
           <div className={styles.landingSubheader}>
             I enjoy bringing ideas to <div className={styles.landingSubheaderAccent}>life</div> on
             the web
           </div>
-          <div className={styles.ctaContainer}>
+          <div data-aos="zoom-in" data-aos-easing="ease-in" className={styles.ctaContainer}>
             <Button to="about" text="Find out more" />
           </div>
         </div>
