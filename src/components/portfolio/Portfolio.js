@@ -354,9 +354,7 @@ const CardCarousel = props => {
 
   return (
     <div data-aos="zoom-in" data-aos-duration="600" className={styles.cardCarouselContainer}>
-      <div>
-        <Card {...card} />
-      </div>
+      <Card {...card} />
       {card.images && (
         <div className={styles.cardCarousel}>
           <Carousel showArrows autoPlay infiniteLoop showThumbs={false} className={styles.carousel}>
