@@ -93,6 +93,23 @@ a:focus::after {
   transform: translate3d(0, 0.05em, 0);
 }
 
+.iconContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  justify-content: space-evenly;
+}
+
+.skillIcon {
+  text-align: center;
+  height: 88px;
+  width: 88px;
+}
+
+.skillIconAttribution {
+  text-align: right;
+}
+
 /* Section */
 .section {
   display: flex;

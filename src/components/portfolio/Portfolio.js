@@ -29,6 +29,7 @@ const Portfolio = props => {
       <div className={styles.portfolio} ref={props.sectionRef}>
         <div className={styles.portfolioContent}>
           <Section sectionTitle="Education" cards={educationCards} />
+          <Section sectionTitle="Skills" cards={skillsCards} />
           <Section sectionTitle="External Courses" cards={externalCoursesCards} />
 
           {renderHeader('Work Experience')}
@@ -69,6 +70,109 @@ const educationCards = [
       {
         subtitle: 'GCE A Level',
         points: ['Attained 88.75/ 90 RP with Distinction in H3 Geography']
+      }
+    ]
+  }
+];
+
+const skillsCards = [
+  {
+    title: `I'm proficient in:`,
+    sections: [
+      {
+        icons: [
+          {
+            src: 'https://img.icons8.com/color/48/000000/html-5.png',
+            name: 'HTML/CSS'
+          },
+          // {
+          //   src: "https://img.icons8.com/color/48/000000/css3.png",
+          //   name: "CSS"
+          // },
+          {
+            src: 'https://img.icons8.com/color/48/000000/javascript--v1.png',
+            name: 'JavaScript'
+          },
+          {
+            src: 'https://img.icons8.com/color/48/000000/typescript.png',
+            name: 'TypeScript'
+          },
+          {
+            src: 'https://img.icons8.com/officel/48/000000/react.png',
+            name: 'ReactJS'
+          },
+          {
+            src: 'https://img.icons8.com/color/48/000000/redux.png',
+            name: 'Redux'
+          },
+          {
+            src: 'https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png',
+            name: 'Java'
+          },
+          {
+            src: 'https://img.icons8.com/color/48/000000/python--v1.png',
+            name: 'Python'
+          },
+          {
+            src: 'https://img.icons8.com/color/48/000000/postgreesql.png',
+            name: 'PostgreSQL'
+          }
+          // {
+          //   src: "https://img.icons8.com/color/48/000000/git.png",
+          //   name: "Git"
+          // },
+        ]
+      }
+    ]
+  },
+  {
+    title: `I've dabbled in:`,
+    sections: [
+      {
+        icons: [
+          {
+            src: 'https://img.icons8.com/color/48/000000/golang.png',
+            name: 'Go'
+          },
+          {
+            src: 'https://img.icons8.com/color/48/000000/graphql.png',
+            name: 'GraphQL'
+          },
+          {
+            src: 'https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/000000/external-mongodb-a-cross-platform-document-oriented-database-program-logo-color-tal-revivo.png',
+            name: 'MongoDB'
+          },
+          {
+            src: 'https://img.icons8.com/color/48/000000/redis.png',
+            name: 'Redis'
+          },
+          {
+            src: 'https://img.icons8.com/color/48/000000/docker.png',
+            name: 'Docker'
+          },
+          {
+            src: 'https://img.icons8.com/color/48/000000/amazon-web-services.png',
+            name: 'AWS'
+          },
+          {
+            src: 'https://img.icons8.com/color/48/000000/heroku.png',
+            name: 'Heroku'
+          },
+          {
+            src: 'https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/000000/external-cloudflare-provides-content-delivery-network-services-ddos-mitigation-logo-color-tal-revivo.png',
+            name: 'Cloudflare'
+          }
+        ],
+        attribution: (
+          <p className={styles.skillIconAttribution}>
+            <i>
+              * Icons from{' '}
+              <a href="https://icons8.com" target="_blank" rel="noreferrer">
+                Icons8
+              </a>
+            </i>
+          </p>
+        )
       }
     ]
   }
@@ -391,6 +495,19 @@ const Card = props => {
               {!e.subtitleLink && e.subtitle}
             </div>
             {idx === 0 && date && <div className={styles.date2}>({date})</div>}
+            {e.icons && (
+              <>
+                <div className={styles.iconContainer}>
+                  {e.icons.map((icon, idx) => (
+                    <div key={idx} className={styles.skillIcon}>
+                      <img src={icon.src} alt={icon.name} />
+                      <div>{icon.name}</div>
+                    </div>
+                  ))}
+                </div>
+                {e.attribution}
+              </>
+            )}
             <ul>
               {e.points && e.points.map((e, idx) => <li key={idx}>{e}</li>)}
               {e.links &&
