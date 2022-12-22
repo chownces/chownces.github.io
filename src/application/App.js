@@ -7,7 +7,6 @@ import About from '../pages/about/About';
 import styles from './App.module.css';
 import Experience from '../pages/experience/Experience';
 import Portfolio from '../pages/portfolio/Portfolio';
-import Coursework from '../pages/coursework/Coursework';
 import Footer from '../footer/Footer';
 
 function App() {
@@ -73,7 +72,6 @@ function App() {
         <About sectionRef={aboutRef} />
         <Experience sectionRef={experienceRef} />
         <Portfolio sectionRef={portfolioRef} />
-        <Coursework />
       </main>
       <Footer />
     </div>

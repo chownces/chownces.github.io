@@ -5,6 +5,7 @@ import NoteWorthyImg from '../../assets/nw1.png';
 import SAImg from '../../assets/sa2.png';
 import ClimbJiosImg from '../../assets/climbjios.png';
 import React from 'react';
+import Coursework from '../coursework/Coursework';
 
 const Portfolio = props => {
   return (
@@ -16,6 +17,7 @@ const Portfolio = props => {
           <Card key={idx} data={e} />
         ))}
       </div>
+      <Coursework />
     </div>
   );
 };
