@@ -1,11 +1,10 @@
 .button {
-  font-family: 'Raleway';
-  font-weight: bold;
-  font-size: 1.2rem;
-  color: #fff;
-  border: 2px solid white;
-  border-radius: 5px;
-  padding: 10px 0;
+  font-family: 'Montserrat';
+  font-size: clamp(18px, 3vw, 24px);
+  color: #f4f4f5;
+  border: 2px solid #f4f4f5;
+  border-radius: 10px;
+  padding: 15px 5px;
   width: fit-content;
   background-color: transparent;
 }

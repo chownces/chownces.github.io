@@ -1,0 +1,26 @@
+.sectionHeading {
+  color: #f4f4f5;
+  font-family: 'Montserrat';
+  font-size: clamp(28px, 6vw, 40px);
+  margin-top: 0;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.sectionHeading::after {
+  content: '';
+  display: block;
+  position: relative;
+  width: 400px;
+  height: 2px;
+  margin-left: 20px;
+  background-color: #fff;
+}
+
+@media only screen and (max-width: 1024px) {
+  .sectionHeading::after {
+    width: 100%;
+  }
+}

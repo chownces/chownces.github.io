@@ -1,0 +1,95 @@
+.landingContainer {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 0px;
+
+  /* Centralise the content horizontally */
+  margin: 0px auto;
+  max-width: 1600px;
+  padding: 0px 150px;
+}
+
+.landingHeader {
+  font-family: 'Open Sans';
+  margin: 0 0 20px 0;
+  color: #f4f4f5;
+  font-size: clamp(40px, 8vw, 80px);
+}
+
+.landingSubheader {
+  font-family: 'Montserrat';
+  font-size: clamp(18px, 4vw, 40px);
+  color: #f4f4f5;
+
+  margin-bottom: 30px;
+
+  /* Typewriter effect referenced from https://css-tricks.com/snippets/css/typewriter-effect/ */
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  animation: typing 0.8s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* Typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+.landingSubheaderAccent {
+  color: rgba(255, 87, 87, 0.8);
+  font-weight: bold;
+  display: inline;
+}
+
+.landingText {
+  font-family: 'Open Sans';
+  color: #a2a2a8;
+  font-size: clamp(15px, 2vw, 19px);
+  max-width: 600px;
+  line-height: 1.7;
+}
+
+.ctaContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .landingContainer {
+    padding: 0 100px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .landingContainer {
+    padding: 0 40px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .landingContainer {
+    padding: 0 15px;
+  }
+}

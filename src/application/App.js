@@ -1,16 +1,20 @@
 import React from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import NavigationBar from '../navigationBar/NavigationBar';
-import Landing from '../landing/Landing';
-import About from '../about/About';
+import NavigationBar from '../components/navigationBar/NavigationBar';
+import Landing from '../pages/landing/Landing';
+import About from '../pages/about/About';
 import styles from './App.module.css';
-import Portfolio from '../portfolio/Portfolio';
+import Experience from '../pages/experience/Experience';
+import Portfolio from '../pages/portfolio/Portfolio';
+import Coursework from '../pages/coursework/Coursework';
+import Footer from '../footer/Footer';
 
 function App() {
   const landingRef = React.useRef();
   const navbarRef = React.useRef();
   const aboutRef = React.useRef();
+  const experienceRef = React.useRef();
   const portfolioRef = React.useRef();
 
   const [visibleSection, setVisibleSection] = React.useState();
@@ -19,6 +23,7 @@ function App() {
     () => [
       { section: 'Landing', ref: landingRef },
       { section: 'About', ref: aboutRef },
+      { section: 'Experience', ref: experienceRef },
       { section: 'Portfolio', ref: portfolioRef }
     ],
     []
@@ -63,11 +68,14 @@ function App() {
   return (
     <div className="App">
       <Landing sectionRef={landingRef} />
-      <div className={styles.contentContainer}>
-        <NavigationBar section={visibleSection} sectionRef={navbarRef} />
+      <NavigationBar section={visibleSection} sectionRef={navbarRef} />
+      <main className={styles.contentContainer}>
         <About sectionRef={aboutRef} />
+        <Experience sectionRef={experienceRef} />
         <Portfolio sectionRef={portfolioRef} />
-      </div>
+        <Coursework />
+      </main>
+      <Footer />
     </div>
   );
 }

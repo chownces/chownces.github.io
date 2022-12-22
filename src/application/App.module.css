@@ -1,0 +1,23 @@
+.contentContainer {
+  margin: 0px auto;
+  max-width: 1600px;
+  padding: 0px 150px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .contentContainer {
+    padding: 0 90px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contentContainer {
+    padding: 0 40px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .contentContainer {
+    padding: 0 15px;
+  }
+}

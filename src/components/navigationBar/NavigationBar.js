@@ -8,11 +8,6 @@ const NavigationBar = props => {
   return (
     <div className={styles.navbarContainer} ref={props.sectionRef}>
       <ul>
-        <li style={{ fontFamily: 'Arvo', color: 'white', fontWeight: 'bold' }}>
-          <Link to="home" spy smooth className={styles.logo}>
-            Chow En Rong
-          </Link>
-        </li>
         <li className={getActiveStyling('Landing')}>
           <Link to="home" spy smooth>
             Home
@@ -21,6 +16,11 @@ const NavigationBar = props => {
         <li className={getActiveStyling('About')}>
           <Link to="about" spy smooth>
             About
+          </Link>
+        </li>
+        <li className={getActiveStyling('Experience')}>
+          <Link to="experience" spy smooth>
+            Experience
           </Link>
         </li>
         <li className={getActiveStyling('Portfolio')}>

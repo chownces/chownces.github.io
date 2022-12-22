@@ -3,7 +3,7 @@
   position: sticky;
   position: -webkit-sticky;
   top: 0;
-  background-color: #111;
+  background-color: #1d1d20;
   opacity: 0.95;
   z-index: 3;
 
@@ -11,7 +11,11 @@
   justify-content: space-between;
 
   height: 47.5px;
-  overflow: hidden;
+  overflow-x: scroll;
+  scrollbar-width: none; /* Firefox */
+}
+.navbarContainer::-webkit-scrollbar {
+  display: none;
 }
 
 .navbarContainer ul {
@@ -23,27 +27,27 @@
 
 .navbarContainer li a {
   display: block;
-  color: white;
+  color: #f4f4f5;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 .navbarContainer li a:hover {
-  background-color: #222;
+  background-color: #2e2e31;
   cursor: pointer;
 }
 
 .navbarContainer li.active a:hover {
-  background-color: #2b2b2b;
+  background-color: #434347;
 }
 
 .navbarContainer li a.logo:hover {
-  background-color: #111;
+  background-color: #2e2e31;
 }
 
 .active {
-  background-color: #2b2b2b;
+  background-color: #434347;
 }
 
 @media only screen and (max-width: 550px) {

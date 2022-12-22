@@ -1,0 +1,64 @@
+.coursework {
+  height: 100%;
+  min-height: calc(100vh - 47.5px);
+  margin: 100px auto 0 auto;
+  max-width: 1200px;
+}
+
+.courseworkContent {
+  display: flex;
+  flex-direction: row;
+}
+
+.courseworkContentColumn {
+  margin: 0 10px;
+}
+
+.courseworkContentSection {
+}
+
+.courseworkContentSectionHeader {
+  font-family: 'Montserrat';
+  font-weight: bold;
+  color: #f4f4f5;
+}
+
+.courseworkContentSectionText {
+  font-family: 'Open Sans';
+  font-size: 16px;
+  color: #b8b8b4;
+  line-height: 1.7;
+}
+
+.courseworkContentSectionTextLink a {
+  color: #b8b8b4;
+  text-decoration: none;
+}
+.courseworkContentSectionTextLink a:hover {
+  color: rgba(255, 87, 87, 0.8);
+  text-decoration: none;
+}
+.courseworkContentSectionTextLink a:hover i {
+  color: rgba(255, 87, 87, 0.8);
+}
+.courseworkContentSectionTextLink i {
+  color: rgba(255, 87, 87, 0.8);
+}
+
+@media only screen and (max-width: 1024px) {
+  .courseworkContent {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .coursework {
+    margin-top: 60px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .coursework {
+    margin-top: 30px;
+  }
+}
