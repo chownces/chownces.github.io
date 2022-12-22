@@ -1,0 +1,2 @@
+- update landing page image
+- update ogp image
