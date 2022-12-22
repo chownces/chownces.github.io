@@ -77,8 +77,8 @@ const portfolioData = [
     date: 'Sep 2022 - Present',
     image: ClimbJiosImg,
     content: [
-      'Architected and implemented the backend infrastructure. Presently managing deployment ops for the application',
-      'Worked closely with product stakeholders to setup analytics dashboards through software tools like Retool. Presently, we have >1300 users on our platform',
+      'Architected and implemented the backend infrastructure, and presently managing deployment ops for the application, which has over 1300 users',
+      'Worked closely with product stakeholders to setup analytics dashboards through software tools like Retool',
       'Awarded the winning project for the NUS School of Computing STePS Showcase Event in November 2022'
     ],
     techStack: ['TypeScript', 'ReactJS', 'NestJS', 'PostgreSQL', 'AWS'],
