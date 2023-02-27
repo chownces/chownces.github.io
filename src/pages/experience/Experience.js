@@ -22,7 +22,7 @@ const experienceData = [
     landingPageLink: 'https://www.climbjios.com',
     date: 'Sep 2022 - Present',
     content: [
-      'ClimbJios is an open-source app that connects the climbing community in Singapore, and is currently being used by >1300 climbers across Singapore to share gym passes, meet new people, and discover cool Beta videos from the community',
+      'ClimbJios is an open-source app that connects the climbing community in Singapore, and is currently being used by >1700 climbers across Singapore to share gym passes, meet new people, and discover cool Beta videos from the community',
       'Architected, implemented and deployed the backend infrastructure',
       'Worked closely with product stakeholders to setup analytics dashboards through software tools like Retool',
       'Awarded the winning project for the NUS School of Computing STePS Showcase Event in November 2022'
@@ -106,7 +106,7 @@ const experienceData = [
     date: 'Nov 2021 - Dec 2021',
     content: [
       'Implemented new features and responsive layouts for user-facing frontend dashboards',
-      'Spearheaded code quality improvements for the frontend repository, such as the migration from JavaScript to TypeScript'
+      'Spearheaded code quality improvements for the frontend repository, inclusive of the migration from JavaScript to TypeScript'
     ]
   },
   {
@@ -115,6 +115,7 @@ const experienceData = [
     landingPageLink: 'https://www.nus.edu.sg',
     date: 'Aug 2021 - Present',
     content: [
+      'CS2040S Data Structures and Algorithms (Jan 2023 - Present)',
       <>
         CS1101S Programming Methodology (Aug - Nov 2022)
         <ul>

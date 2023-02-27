@@ -98,9 +98,10 @@ const courseworkData = [
   {
     sectionHeader: 'Ongoing Coursework',
     content: [
-      'CS3217 Software Engineering on Modern Application Platforms',
+      // 'CS3217 Software Engineering on Modern Application Platforms',
       'CS3243 Introduction to Artificial Intelligence',
       'CS4243 Computer Vision and Pattern Recognition',
+      'CS4249 Phenomena and Theories of Human-Computer Interaction',
       'CS2105 Introduction to Computer Networks'
     ]
   },
@@ -111,6 +112,10 @@ const courseworkData = [
       {
         text: "Dean's List AY20/21 Semester 1",
         link: 'https://credentials.nus.edu.sg/03ec0e09-4f93-430a-93e0-43c7499fcc99'
+      },
+      {
+        text: "Dean's List AY22/23 Semester 1",
+        link: 'https://credentials.nus.edu.sg/5244f877-f86e-4e8f-8b30-99b0c2fde2cd'
       },
       {
         text: 'Top student in CS2103T Software Engineering AY21/22 Semester 1',
