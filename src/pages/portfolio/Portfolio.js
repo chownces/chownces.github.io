@@ -24,10 +24,17 @@ const Portfolio = props => {
 
 const Card = props => {
   const { data } = props;
+  const imageLink = data.appLink || data.documentationLink;
   return (
     <div className={styles.card}>
       <div className={styles.cardImage}>
-        <img src={data.image} alt={data.title}></img>
+        {imageLink ? (
+          <a href={imageLink} title="Application" target="_blank" rel="noreferrer">
+            <img src={data.image} alt={data.title}></img>
+          </a>
+        ) : (
+          <img src={data.image} alt={data.title}></img>
+        )}
       </div>
       <div className={styles.cardContent}>
         <h3 className={styles.cardContentHeader}>{data.title}</h3>
