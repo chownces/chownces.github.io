@@ -1,2 +1,3 @@
-- update landing page image
-- update ogp image
+- make featured projects clickable
+- update acad modules info
+- consider migrating to typescript
