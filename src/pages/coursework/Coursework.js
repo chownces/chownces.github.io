@@ -3,8 +3,8 @@ import Spacer from '../../components/spacer/Spacer';
 import styles from './Coursework.module.css';
 
 const Coursework = () => {
-  const col1Data = courseworkData.filter((e, idx) => idx < courseworkData.length / 2);
-  const col2Data = courseworkData.filter((e, idx) => idx >= courseworkData.length / 2);
+  const col1Data = courseworkData.filter((e, idx) => idx < courseworkData.length / 2 - 1);
+  const col2Data = courseworkData.filter((e, idx) => idx >= courseworkData.length / 2 - 1);
 
   const renderSection = (data, idx) => (
     <div key={idx} className={styles.courseworkContentSection}>
@@ -49,7 +49,8 @@ const courseworkData = [
     content: [
       'CS1101S Programming Methodology (A+)',
       'CS2030S Programming Methodology II (A+)',
-      'CS2040S Data Structures and Algorithms (A-)'
+      'CS2040S Data Structures and Algorithms (A-)',
+      'CS2105 Introduction to Computer Networks (ongoing)'
     ]
   },
   {
@@ -68,6 +69,8 @@ const courseworkData = [
   {
     sectionHeader: 'Artificial Intelligence',
     content: [
+      'CS3243 Introduction to Artificial Intelligence (ongoing)',
+      'CS4243 Computer Vision and Pattern Recognition (ongoing)',
       {
         text: 'DMX1501AI AI for Industry - AI Singapore (CS)',
         link: 'https://certified.aisingapore.org/5513aa36-b3d4-45af-b0b1-021999b6ae74'
@@ -83,28 +86,30 @@ const courseworkData = [
     ]
   },
   {
-    sectionHeader: 'Cybersecurity',
-    content: ['CS2107 Introduction to Information Security (A-)']
+    sectionHeader: 'UI/UX Design',
+    content: [
+      'CS3240 Interaction Design (A+)',
+      'CS4249 Phenomena and Theories of Human-Computer Interaction (ongoing)'
+    ]
   },
   {
-    sectionHeader: 'UI/UX Design',
-    content: ['CS3240 Interaction Design (A+)']
+    sectionHeader: 'Cybersecurity',
+    content: ['CS2107 Introduction to Information Security (A-)']
   },
   {
     sectionHeader: 'Technical Management',
     content: ['IT2900 Technical Management and Leadership (CS)']
   },
-
-  {
-    sectionHeader: 'Ongoing Coursework',
-    content: [
-      // 'CS3217 Software Engineering on Modern Application Platforms',
-      'CS3243 Introduction to Artificial Intelligence',
-      'CS4243 Computer Vision and Pattern Recognition',
-      'CS4249 Phenomena and Theories of Human-Computer Interaction',
-      'CS2105 Introduction to Computer Networks'
-    ]
-  },
+  // {
+  //   sectionHeader: 'Ongoing Coursework',
+  //   content: [
+  //     // 'CS3217 Software Engineering on Modern Application Platforms',
+  //     'CS3243 Introduction to Artificial Intelligence',
+  //     'CS4243 Computer Vision and Pattern Recognition',
+  //     'CS4249 Phenomena and Theories of Human-Computer Interaction',
+  //     'CS2105 Introduction to Computer Networks'
+  //   ]
+  // },
   {
     sectionHeader: 'NUS Awards',
     content: [
