@@ -23,7 +23,7 @@ const experienceData = [
     date: 'Sep 2022 - Present',
     content: [
       'ClimbJios is an open-source app that connects the climbing community in Singapore, and is currently being used by >1700 climbers across Singapore to share gym passes, meet new people, and discover cool Beta videos from the community',
-      'Architected, implemented and deployed the backend infrastructure',
+      'Architected, implemented and deployed the backend infrastructure on AWS',
       'Worked closely with product stakeholders to setup analytics dashboards through software tools like Retool',
       'Awarded the winning project for the NUS School of Computing STePS Showcase Event in November 2022'
     ],
