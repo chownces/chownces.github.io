@@ -50,7 +50,7 @@ const courseworkData = [
       'CS1101S Programming Methodology (A+)',
       'CS2030S Programming Methodology II (A+)',
       'CS2040S Data Structures and Algorithms (A-)',
-      'CS2105 Introduction to Computer Networks (ongoing)'
+      'CS2105 Introduction to Computer Networks (A-)'
     ]
   },
   {
@@ -69,8 +69,8 @@ const courseworkData = [
   {
     sectionHeader: 'Artificial Intelligence',
     content: [
-      'CS3243 Introduction to Artificial Intelligence (ongoing)',
-      'CS4243 Computer Vision and Pattern Recognition (ongoing)',
+      'CS3243 Introduction to Artificial Intelligence (A)',
+      'CS4243 Computer Vision and Pattern Recognition (A+)',
       {
         text: 'DMX1501AI AI for Industry - AI Singapore (CS)',
         link: 'https://certified.aisingapore.org/5513aa36-b3d4-45af-b0b1-021999b6ae74'
@@ -89,7 +89,7 @@ const courseworkData = [
     sectionHeader: 'UI/UX Design',
     content: [
       'CS3240 Interaction Design (A+)',
-      'CS4249 Phenomena and Theories of Human-Computer Interaction (ongoing)'
+      'CS4249 Phenomena and Theories of Human-Computer Interaction (B+)'
     ]
   },
   {
@@ -104,16 +104,12 @@ const courseworkData = [
   //   sectionHeader: 'Ongoing Coursework',
   //   content: [
   //     // 'CS3217 Software Engineering on Modern Application Platforms',
-  //     'CS3243 Introduction to Artificial Intelligence',
-  //     'CS4243 Computer Vision and Pattern Recognition',
-  //     'CS4249 Phenomena and Theories of Human-Computer Interaction',
-  //     'CS2105 Introduction to Computer Networks'
   //   ]
   // },
   {
     sectionHeader: 'NUS Awards',
     content: [
-      'Cumulative Average Point (CAP): 4.82/ 5.0',
+      'Cumulative Average Point (CAP): 4.79/ 5.0',
       {
         text: "Dean's List AY20/21 Semester 1",
         link: 'https://credentials.nus.edu.sg/03ec0e09-4f93-430a-93e0-43c7499fcc99'
@@ -129,6 +125,10 @@ const courseworkData = [
       {
         text: 'Outstanding Undergraduate Researcher Prize (Group) 2022',
         link: 'https://credentials.nus.edu.sg/8ac97c2c-6c03-4478-af4c-f34b662a3e10'
+      },
+      {
+        text: 'NUS SoC STePS CS3216 Best Project Award - Platinum',
+        link: 'https://credentials.nus.edu.sg/04e94179-de38-47f4-9615-9427b5f9651c'
       }
     ]
   }

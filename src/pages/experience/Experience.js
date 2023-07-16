@@ -20,7 +20,7 @@ const experienceData = [
     tabTitle: 'ClimbJios',
     header: 'Co-Founder',
     landingPageLink: 'https://www.climbjios.com',
-    date: 'Sep 2022 - Present',
+    date: 'Sep 2022 - Dec 2022',
     content: [
       'ClimbJios is an open-source app that connects the climbing community in Singapore, and is currently being used by >1700 climbers across Singapore to share gym passes, meet new people, and discover cool Beta videos from the community',
       'Architected, implemented and deployed the backend infrastructure on AWS',
@@ -115,7 +115,7 @@ const experienceData = [
     landingPageLink: 'https://www.nus.edu.sg',
     date: 'Aug 2021 - Present',
     content: [
-      'CS2040S Data Structures and Algorithms (Jan 2023 - Present)',
+      'CS2040S Data Structures and Algorithms (Jan - April 2023)',
       <>
         CS1101S Programming Methodology (Aug - Nov 2022)
         <ul>
