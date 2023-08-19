@@ -1,3 +1,2 @@
-- make featured projects clickable
 - update acad modules info
 - consider migrating to typescript
