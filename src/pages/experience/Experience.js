@@ -115,9 +115,8 @@ const experienceData = [
     landingPageLink: 'https://www.nus.edu.sg',
     date: 'Aug 2021 - Present',
     content: [
-      'CS2040S Data Structures and Algorithms (Jan - April 2023)',
       <>
-        CS1101S Programming Methodology (Aug - Nov 2022)
+        CS1101S Programming Methodology (Aug-Nov '23, Aug-Nov '22, Aug-Nov '21)
         <ul>
           <li>
             Led weekly recitation classes on programming and computational problem solving for
@@ -129,6 +128,7 @@ const experienceData = [
           </li>
         </ul>
       </>,
+      'CS2040S Data Structures and Algorithms (Jan - April 2023)',
       'CS2103T Software Engineering (Aug - Nov 2022)',
       'CS1101S Programming Methodology (Aug - Nov 2021)'
     ]

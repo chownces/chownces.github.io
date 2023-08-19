@@ -3,8 +3,8 @@ import Spacer from '../../components/spacer/Spacer';
 import styles from './Coursework.module.css';
 
 const Coursework = () => {
-  const col1Data = courseworkData.filter((e, idx) => idx < courseworkData.length / 2 - 1);
-  const col2Data = courseworkData.filter((e, idx) => idx >= courseworkData.length / 2 - 1);
+  const col1Data = courseworkData.filter((e, idx) => idx < courseworkData.length / 2);
+  const col2Data = courseworkData.filter((e, idx) => idx >= courseworkData.length / 2);
 
   const renderSection = (data, idx) => (
     <div key={idx} className={styles.courseworkContentSection}>
@@ -50,7 +50,8 @@ const courseworkData = [
       'CS1101S Programming Methodology (A+)',
       'CS2030S Programming Methodology II (A+)',
       'CS2040S Data Structures and Algorithms (A-)',
-      'CS2105 Introduction to Computer Networks (A-)'
+      'CS2105 Introduction to Computer Networks (A-)',
+      'CS3230 Design and Analysis of Algorithms (ongoing)'
     ]
   },
   {
@@ -58,30 +59,12 @@ const courseworkData = [
     content: [
       'CS2103T Software Engineering (A+)',
       'CS3216 Software Product Engineering for Digital Markets (A+)',
+      'CS3219 Software Engineering Principles and Patterns (ongoing)',
       'CP3880 Advanced Technology Attachment Programme (CS)',
       'CP3108B Independent Work (CS)',
       {
         text: 'CP2106 Independent Software Development Project - Orbital (CS)',
         link: 'https://credentials.nus.edu.sg/35d4de8a-aee7-47e6-a967-2f80101856ca'
-      }
-    ]
-  },
-  {
-    sectionHeader: 'Artificial Intelligence',
-    content: [
-      'CS3243 Introduction to Artificial Intelligence (A)',
-      'CS4243 Computer Vision and Pattern Recognition (A+)',
-      {
-        text: 'DMX1501AI AI for Industry - AI Singapore (CS)',
-        link: 'https://certified.aisingapore.org/5513aa36-b3d4-45af-b0b1-021999b6ae74'
-      },
-      {
-        text: 'Neural Networks and Deep Learning - DeepLearning.AI (Coursera)',
-        link: 'https://www.coursera.org/account/accomplishments/certificate/N7CYGG5Y87H2'
-      },
-      {
-        text: 'Machine Learning - Stanford University (Coursera)',
-        link: 'https://www.coursera.org/account/accomplishments/certificate/VQQFG8S5BS48'
       }
     ]
   },
@@ -95,6 +78,26 @@ const courseworkData = [
   {
     sectionHeader: 'Cybersecurity',
     content: ['CS2107 Introduction to Information Security (A-)']
+  },
+  {
+    sectionHeader: 'Artificial Intelligence',
+    content: [
+      'CS3243 Introduction to Artificial Intelligence (A)',
+      'CS4243 Computer Vision and Pattern Recognition (A+)',
+      'CS3244 Machine Learning (ongoing)',
+      {
+        text: 'DMX1501AI AI for Industry - AI Singapore (CS)',
+        link: 'https://certified.aisingapore.org/5513aa36-b3d4-45af-b0b1-021999b6ae74'
+      },
+      {
+        text: 'Neural Networks and Deep Learning - DeepLearning.AI (Coursera)',
+        link: 'https://www.coursera.org/account/accomplishments/certificate/N7CYGG5Y87H2'
+      },
+      {
+        text: 'Machine Learning - Stanford University (Coursera)',
+        link: 'https://www.coursera.org/account/accomplishments/certificate/VQQFG8S5BS48'
+      }
+    ]
   },
   {
     sectionHeader: 'Technical Management',
@@ -121,6 +124,10 @@ const courseworkData = [
       {
         text: 'Top student in CS2103T Software Engineering AY21/22 Semester 1',
         link: 'https://credentials.nus.edu.sg/32b7a65e-29df-42ab-a148-06319a7b6b0d'
+      },
+      {
+        text: 'Top student in CS4243 Computer Vision and Pattern Recognition AY22/23 Semester 2',
+        link: 'https://credentials.nus.edu.sg/8ddc2fad-b1f1-4020-9928-22501a3bc8a9'
       },
       {
         text: 'Outstanding Undergraduate Researcher Prize (Group) 2022',
