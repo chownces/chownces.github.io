@@ -2,6 +2,7 @@ import profileImg from '../../assets/profile.jpeg';
 import styles from './About.module.css';
 import Spacer from '../../components/spacer/Spacer';
 import SectionHeading from '../../components/sectionHeading/SectionHeading';
+import Button from '../../components/button/Button';
 
 const About = props => {
   return (
@@ -55,7 +56,20 @@ const About = props => {
             </div>
           </div>
         </div>
+        <div className={styles.aboutNavigationButtonsContainer}>
+          <AboutNavigationButton to="experience" text="My Experiences" />
+          <AboutNavigationButton to="portfolio" text="My Projects" />
+          <AboutNavigationButton to="coursework" text="My Coursework" />
+        </div>
       </div>
+    </div>
+  );
+};
+
+const AboutNavigationButton = ({ to, text }) => {
+  return (
+    <div className={styles.aboutNavigationButton}>
+      <Button to={to} text={text} isSmall />
     </div>
   );
 };

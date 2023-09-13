@@ -83,10 +83,10 @@ const Card = props => {
 const portfolioData = [
   {
     title: 'ClimbJios',
-    date: 'Sep 2022 - Present',
+    date: 'Sep 2022 - Dec 2022',
     image: ClimbJiosImg,
     content: [
-      'Architected, implemented and deployed the entire backend infrastructure on AWS, and presently managing deployment ops for the application, which has over 1700 users',
+      'Architected, implemented and deployed the entire backend infrastructure on AWS, and managed deployment ops for the application, which has over 1700 users',
       'Worked closely with product stakeholders to setup analytics dashboards through software tools like Retool',
       'Awarded the winning project for the NUS School of Computing STePS Showcase Event in November 2022'
     ],

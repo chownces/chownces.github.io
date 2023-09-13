@@ -9,6 +9,10 @@
   background-color: transparent;
 }
 
+.small {
+  font-size: clamp(16px, 3vw, 18px);
+}
+
 .button a {
   padding: 12px 20px;
 }

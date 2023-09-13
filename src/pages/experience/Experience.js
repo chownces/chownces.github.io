@@ -49,19 +49,22 @@ const experienceData = [
     date: 'Dec 2020 - Present',
     content: [
       'Source Academy is an open-source, gamified online learning environment developed at NUS, and is used to teach CS1101S Programming Methodology to >750 Computer Science freshmen each year',
-      'Open-source contributor, reviewer, maintainer and system admin of the Source Academy and its repositories',
-      'Liaises closely with NUS Professors and students to deliver impactful new features and final year projects',
+      'Open-source contributor, reviewer, maintainer of the Source Academy repositories with over 120 commits and 71 PRs',
       <>
-        Sample of features I built include:
+        Notable contributions include:
         <ul>
           <li>
-            Multi-tenant backend architecture and UI for a system which could previously only cater
-            to a single course at a time, thus enabling multiple courses to run concurrently on the
-            same instance with no downtime
+            Spearheaded the migration to React18, react-router v6, functional components and various
+            dependency upgrades
+          </li>
+          <li>
+            Enabled multiple courses to run concurrently on the same backend instance by developing
+            multi-tenant backend architecture for the system which could previously only cater to a
+            single course at a time
           </li>
           <li>
             Designed and implemented responsive layouts and mobile-friendly features for the
-            previously desktop-only online IDE
+            previously desktop-only online IDE in Source Academy
           </li>
         </ul>
       </>,
