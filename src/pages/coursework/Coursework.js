@@ -47,7 +47,7 @@ const courseworkData = [
   {
     sectionHeader: 'NUS Awards',
     content: [
-      'Cumulative Average Point (CAP): 4.79/ 5.0',
+      'Cumulative Average Point (CAP): 4.76/ 5.0',
       {
         text: "Dean's List AY20/21 Semester 1",
         link: 'https://credentials.nus.edu.sg/03ec0e09-4f93-430a-93e0-43c7499fcc99'
@@ -79,7 +79,7 @@ const courseworkData = [
     content: [
       'CS2103T Software Engineering (A+)',
       'CS3216 Software Product Engineering for Digital Markets (A+)',
-      'CS3219 Software Engineering Principles and Patterns (ongoing)',
+      'CS3219 Software Engineering Principles and Patterns (A-)',
       'CP3880 Advanced Technology Attachment Programme (CS)',
       'CP3108B Independent Work (CS)',
       {
@@ -102,16 +102,16 @@ const courseworkData = [
       'CS2030S Programming Methodology II (A+)',
       'CS2040S Data Structures and Algorithms (A-)',
       'CS2105 Introduction to Computer Networks (A-)',
-      'CS3230 Design and Analysis of Algorithms (ongoing)'
+      'CS3230 Design and Analysis of Algorithms (A-)'
     ]
   },
   {
     sectionHeader: 'Artificial Intelligence',
     content: [
       'CS3243 Introduction to Artificial Intelligence (A)',
+      'CS3244 Machine Learning (A)',
       'CS4243 Computer Vision and Pattern Recognition (A+)',
       'CP4101 Final Year Project (Automatic Infographic Generation Framework)',
-      'CS3244 Machine Learning (ongoing)',
       {
         text: 'DMX1501AI AI for Industry - AI Singapore (CS)',
         link: 'https://certified.aisingapore.org/5513aa36-b3d4-45af-b0b1-021999b6ae74'
