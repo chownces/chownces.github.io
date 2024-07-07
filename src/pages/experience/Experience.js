@@ -17,6 +17,16 @@ const Experience = props => {
 
 const experienceData = [
   {
+    tabTitle: 'Visier',
+    header: 'Software Engineer',
+    landingPageLink: 'https://www.visier.com',
+    date: 'May 2024 - Present',
+    content: [
+      "Developing Vee, Visier's GenAI digital assistant for People Analytics through retrieval augmented generation (RAG) large language model (LLM) pipelines that are secure and user-permission based."
+    ],
+    links: []
+  },
+  {
     tabTitle: 'ClimbJios',
     header: 'Co-Founder',
     landingPageLink: 'https://www.climbjios.com',

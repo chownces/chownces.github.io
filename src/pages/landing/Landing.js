@@ -15,9 +15,9 @@ const Landing = props => {
         </div>
       </div>
       <div data-aos="zoom-in" data-aos-easing="ease-in" className={styles.landingText}>
-        I'm a full stack engineer working on several open source projects used by thousands of users
-        across the world. Currently, I'm in my final year of university, awaiting graduation in May
-        2024.
+        I'm a software engineer at Visier developing GenAI products in the People Analytics space.
+        Previously, I worked on several open source projects used by thousands of users across the
+        world.
       </div>
       <div data-aos="zoom-in" data-aos-easing="ease-in" className={styles.ctaContainer}>
         <Button to="about" text="Find out more" />

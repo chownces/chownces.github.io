@@ -47,7 +47,7 @@ const courseworkData = [
   {
     sectionHeader: 'NUS Awards',
     content: [
-      'Cumulative Average Point (CAP): 4.76/ 5.0',
+      'GPA: 4.8/ 5.0 (First Class Honors)',
       {
         text: "Dean's List AY20/21 Semester 1",
         link: 'https://credentials.nus.edu.sg/03ec0e09-4f93-430a-93e0-43c7499fcc99'
@@ -55,6 +55,10 @@ const courseworkData = [
       {
         text: "Dean's List AY22/23 Semester 1",
         link: 'https://credentials.nus.edu.sg/5244f877-f86e-4e8f-8b30-99b0c2fde2cd'
+      },
+      {
+        text: "Dean's List AY23/24 Semester 2",
+        link: 'https://credentials.nus.edu.sg/74861ee5-e9e1-43d2-b1e4-f3c4d4445e22'
       },
       {
         text: 'Top student in CS2103T Software Engineering AY21/22 Semester 1',
@@ -71,6 +75,10 @@ const courseworkData = [
       {
         text: 'NUS SoC STePS CS3216 Best Project Award - Platinum',
         link: 'https://credentials.nus.edu.sg/04e94179-de38-47f4-9615-9427b5f9651c'
+      },
+      {
+        text: 'NUS SoC STePS CS3217 Best Project Award - Platinum',
+        link: 'https://credentials.nus.edu.sg/c97955ca-6792-49a6-b4ad-acebe812bc72'
       }
     ]
   },
@@ -79,6 +87,7 @@ const courseworkData = [
     content: [
       'CS2103T Software Engineering (A+)',
       'CS3216 Software Product Engineering for Digital Markets (A+)',
+      'CS3217 Software Engineering on Modern Application Platforms (A+)',
       'CS3219 Software Engineering Principles and Patterns (A-)',
       'CP3880 Advanced Technology Attachment Programme (CS)',
       'CP3108B Independent Work (CS)',
@@ -111,7 +120,11 @@ const courseworkData = [
       'CS3243 Introduction to Artificial Intelligence (A)',
       'CS3244 Machine Learning (A)',
       'CS4243 Computer Vision and Pattern Recognition (A+)',
-      'CP4101 Final Year Project (Automatic Infographic Generation Framework)',
+      'CP4101 Final Year Project - Automatic Infographic Generation Framework (A+)',
+      {
+        text: 'Generative AI with Large Language Models - DeepLearning.AI (Coursera)',
+        link: 'https://www.coursera.org/account/accomplishments/verify/BF7PZ3CNYC7J'
+      },
       {
         text: 'DMX1501AI AI for Industry - AI Singapore (CS)',
         link: 'https://certified.aisingapore.org/5513aa36-b3d4-45af-b0b1-021999b6ae74'

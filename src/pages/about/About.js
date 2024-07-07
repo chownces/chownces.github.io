@@ -14,18 +14,20 @@ const About = props => {
             <div className={styles.aboutContentText}>
               <SectionHeading text="About Me" />
               <p>
-                I am currently completing my Computer Science degree at the National University of
-                Singapore (NUS). Naturally curious, I enjoy tinkering and disassembling things to
-                find out how they work.
+                I recently completed my Computer Science degree at the National University of
+                Singapore (NUS) in June 2024. Naturally curious, I enjoy tinkering and disassembling
+                things to find out how they work.
               </p>
               <p>
-                My interests these days include web development, DevOps and computer vision.
-                Passionate about using tech for good, I am actively seeking opportunities to use
-                software to improve the world around us.
+                My interests these days lie within the GenAI space, where a large part of my work is
+                devoted to building secure RAG LLM applications. During my undergrad, I was also
+                actively involved in the areas of web development, DevOps and large opensource
+                knowledge graphs.
               </p>
               <p>
-                Outside studying, you can find me tutoring undergrad modules, playing fingerstyle
-                guitar, or contributing back to the open source community.
+                Passionate about using tech for good, I am always actively seeking opportunities to
+                use software to improve the world around us. Feel free to connect with me over
+                LinkedIn to have a chat!
               </p>
             </div>
           </div>
